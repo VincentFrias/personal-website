@@ -43,7 +43,7 @@ Layout e Espaçamento (Whitespace): O uso de Flexbox e Grid CSS, combinado com u
 
 🚀 Tecnologias Utilizadas
 
-HTML5: Utilizando tags semânticas (<header>, <nav>, <section>, <footer>) para melhor estrutura e acessibilidade.
+HTML5: Utilizando tags semânticas para melhor estrutura e acessibilidade.
 
 CSS3:
 
