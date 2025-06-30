@@ -70,7 +70,8 @@ Clone o repositório para a sua máquina local:
 
 Bash
 
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+git clone https://github.com/VincentFrias/personal-website
+
 Navegue até o diretório do projeto:
 
 Bash
