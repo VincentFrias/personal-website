@@ -42,6 +42,7 @@ Roboto: Para o corpo do texto, garantindo clareza e legibilidade em todas as pla
 Layout e Espaçamento (Whitespace): O uso de Flexbox e Grid CSS, combinado com um generoso espaçamento em branco, resulta em um design limpo, organizado e que não sobrecarrega o usuário.
 
 🚀 Tecnologias Utilizadas
+
 HTML5: Utilizando tags semânticas (<header>, <nav>, <section>, <footer>) para melhor estrutura e acessibilidade.
 
 CSS3:
