@@ -1,0 +1,272 @@
+/* --- GERAL E VARIÁVEIS --- */
+:root {
+    --primary-color: #0D1B2A;
+    --secondary-color: #1B263B;
+    --accent-color: #3DDC97; /* Verde menta como cor de destaque */
+    --text-light: #E0E1DD;
+    --text-dark: #0D1B2A;
+    --bg-light: #F8F9FA;
+
+    --header-height: 80px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links do menu */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- CABEÇALHO E NAVEGAÇÃO --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    height: var(--header-height);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* --- SEÇÃO HERO --- */
+#hero {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: var(--header-height);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 50%; /* Imagem redonda para um visual moderno */
+    border: 5px solid var(--accent-color);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* --- ESTILOS GERAIS DAS SEÇÕES --- */
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.section-description {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    font-size: 1.1rem;
+}
+
+/* --- SEÇÃO SOBRE --- */
+#about {
+    background-color: #FFFFFF;
+}
+
+.about-content {
+    max-width: 800px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+}
+
+
+/* --- SEÇÃO PORTFÓLIO --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* --- BOTÃO (CTA) --- */
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #29b37c; /* Tom mais escuro da cor de destaque */
+    transform: translateY(-3px);
+}
+
+/* --- SEÇÃO CONTATO --- */
+#contact {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+#contact h2 {
+    color: #FFFFFF;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        display: none; /* Em um projeto real, aqui entraria um menu hamburguer */
+    }
+}
