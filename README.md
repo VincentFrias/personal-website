@@ -27,10 +27,6 @@ Hierarquia Visual: A estrutura do conteúdo guia o olhar do usuário, começando
 
 Teoria das Cores: Foi implementada uma paleta de cores coesa e profissional:
 
-#0D1B2A (Azul Escuro): Transmite confiança e seriedade.
-
-#3DDC97 (Verde Menta): Usado como cor de destaque (accent color) para chamar a atenção para elementos interativos como botões e links.
-
 Cores neutras para garantir máxima legibilidade.
 
 Tipografia Estratégica:
@@ -58,26 +54,25 @@ Animações e Transições: Para adicionar interatividade e feedback visual.
 Google Fonts: Para importar e utilizar as fontes customizadas Roboto e Space Mono.
 
 📂 Estrutura do Projeto
+
 /
 ├── index.html         # Arquivo principal com a estrutura do conteúdo do site
 ├── style.css          # Folha de estilos com todo o design e responsividade
 ├── fotos/
 │   └── github_pic.png # Imagens utilizadas no projeto
 └── README.md          # Este arquivo
+
 🛠️ Como Executar o Projeto Localmente
 Nenhuma instalação complexa é necessária. Basta seguir os passos abaixo:
 
 Clone o repositório para a sua máquina local:
 
-Bash
-
 git clone https://github.com/VincentFrias/personal-website
 
 Navegue até o diretório do projeto:
 
-Bash
-
 cd NOME-DO-REPOSITORIO
+
 Abra o arquivo index.html no seu navegador de preferência.
 
 E pronto! Você estará visualizando o site.
